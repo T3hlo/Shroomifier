@@ -27,7 +27,10 @@ Enter **Shroomifier**, a Raspberry Pi Pico-powered humidifier system designed to
 - **Raspberry Pi Pico**
 - **SHT31 Humidity and Temperature Sensor**
 - **TM1637 4-Digit Display Module**
-- A power supply, cables, and a mushroom tent full of potential.
+- A 12V (or similar) waterproof PC fan for example [this one](https://www.titan-cd.com/en/product/12V-DC-IP55-Waterproof-Dustproof-Case-Cooling-Fan-120mm/TFD-12025KW-Series.html).
+- A fogger matching the size of your tent. Any will do but get a decent one as it will run a lot.
+- A large enough tote depending on the size of your tent.
+- A power supply, cables, and a mushroom tent full of potential. Keep in mind that the foggers tend to run on AC and therefore you might need 24V AC for the fogger, 12V DC for the fan and 5V DC for the pi. 
 
 ### Software Setup
 
