@@ -63,13 +63,28 @@ Enter **Shroomifier**, a Raspberry Pi Pico-powered humidifier system designed to
 
 ### Pin Connections
 
-| Raspberry Pi Pico Pin | Module | Description |
-| --------------------- | ------ | ----------- |
-| GPIO X                | SHT31  | Data line   |
-| GPIO Y                | TM1637 | Clock       |
-| GPIO Z                | TM1637 | Data        |
+| Raspberry Pi Pico Pin | Module        | Description |
+| --------------------- | ------------- | ----------- |
+| GPIO 13               | SHT31         | VCC*        |
+| GPIO 15               | SHT31         | SCL         |
+| GPIO 14               | SHT31         | SDA         |
+| GPIO 16               | TM1637        | CLK         |
+| GPIO 17               | TM1637        | DIO         |
+| GPIO 5                | Relay 0       | IN          |
+| GPIO 4                | Relay 1       | IN          |
+| GPIO 26               | Potentiometer | SIG         |
+| GPIO 1                | Pushbutton    |             |
+| GPIO 2                | LED (button)  |             |
 
-> Replace X, Y, and Z with the actual GPIO pins you're using.
+*The SHT31 is supplied with power via a pin that can be used to power the sensor down if it should fail. This has not been observed at this point so this is not implemented in the current version. 
+
+## Usage
+
+At start up the display flashes and if the pushbutton is pressed, the humidity target can be modified using the potentiometer. Once the humidity is modified the selection mode can be exited by pressing the button again. The display will stop flashing and the humidifier will go back into operational mode. This option is available at any time and can be reached by pressing the push button long until the display briefly goes blank and then starts flashing rapidly. 
+
+The humidifier has a tolerance that can be adjusted in `main.py` as the variable `tolerance` this means the humidifier will only start up once the humidity is below the set tolerance under the target. 
+
+Once the target humidity is reached the humidifier will continue for the minutes defined in `min.py` as the variable `min_overshoot`.
 
 ## Contributions
 
