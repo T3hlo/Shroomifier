@@ -1,4 +1,4 @@
-![Project Status](https://img.shields.io/badge/status-active-brightgreen.svg) ![License](https://img.shields.io/github/license/<username>/<repository>.svg)![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi%20Pico-blue.svg)![Python](https://img.shields.io/badge/python-MicroPython%201.20+-brightgreen.svg)![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)![Made with Love](https://img.shields.io/badge/made%20with-%E2%9D%A4-red.svg)
+![Project Status](https://img.shields.io/badge/status-active-brightgreen.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi%20Pico-blue.svg) ![Python](https://img.shields.io/badge/python-MicroPython%201.20+-brightgreen.svg) ![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg) ![Made with Love](https://img.shields.io/badge/made%20with-%E2%9D%A4-red.svg)
 
 # Shroomifier 🍄💨
 
