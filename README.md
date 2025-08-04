@@ -6,7 +6,7 @@
 
 So, you've recently found yourself mesmerized by the world of gourmet mushrooms—welcome to the club! If you're anything like me, you started innocently enough, perhaps dreaming of a shiitake or lion's mane pasta, but soon found yourself surrounded by substrate, spores, and... a tent?
 
-Enter **Shroomifier**, a Raspberry Pi Pico-powered humidifier system designed to keep your mushroom growing tent in tip-top shape. Whether you're nurturing delicate enoki or regal king oysters, this gadget ensures your fungi friends stay cozy with perfect humidity levels.
+Enter **Shroomifier**, a Raspberry Pi Pico-powered humidifier system designed to keep your mushroom growing tent in tip-top shape. Whether you're nurturing delicate enoki or regal king oysters, this gadget ensures your fungi friends stay cozy with perfect humidity levels. Yes, sure, you could just buy an Inkbird controller and an off-the-shelf humidifier, but where is the fun in that?
 
 ⚠️ Heads-up: This project involves electricity and tanks full of water. If that makes you nervous, it probably should. Please only attempt if you know what you're doing. You are solely responsible for your safety and any outcomes—good or bad—that result from attempting this build.
 
@@ -133,6 +133,4 @@ This project is licensed under the MIT License.
 
 ------
 
-------
-
-Go forth and grow gourmet mushrooms with ease—and may your tent always be humid, but your spirits dry. 🌱
+May your tent always be sufficiently humid as you cultivate delectable mushrooms with ease. :mushroom:
