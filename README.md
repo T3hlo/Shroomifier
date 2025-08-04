@@ -8,6 +8,8 @@ So, you've recently found yourself mesmerized by the world of gourmet mushrooms�
 
 Enter **Shroomifier**, a Raspberry Pi Pico-powered humidifier system designed to keep your mushroom growing tent in tip-top shape. Whether you're nurturing delicate enoki or regal king oysters, this gadget ensures your fungi friends stay cozy with perfect humidity levels.
 
+⚠️ Heads-up: This project involves electricity and tanks full of water. If that makes you nervous, it probably should. Please only attempt if you know what you're doing. You are solely responsible for your safety and any outcomes—good or bad—that result from attempting this build.
+
 ## Features 🚀
 
 - **Precise Humidity Control**: Powered by the SHT31 sensor, it monitors and maintains optimal humidity levels for mushroom growth.
@@ -25,12 +27,34 @@ Enter **Shroomifier**, a Raspberry Pi Pico-powered humidifier system designed to
 ### Hardware Requirements
 
 - **Raspberry Pi Pico**
-- **SHT31 Humidity and Temperature Sensor**
+- **SHT31 Humidity and Temperature Sensor** I have tried other sensors, including the DHT22, but they are buggy and will fail after a short time. They are also very inaccurate at higher humidities. The wiring diagram shows an SHT31 version that is not encased. You should opt for a weatherproof version such as [this](https://www.dfrobot.com/product-2160.html).
 - **TM1637 4-Digit Display Module**
-- A 12V (or similar) waterproof PC fan for example [this one](https://www.titan-cd.com/en/product/12V-DC-IP55-Waterproof-Dustproof-Case-Cooling-Fan-120mm/TFD-12025KW-Series.html).
-- A fogger matching the size of your tent. Any will do but get a decent one as it will run a lot.
-- A large enough tote depending on the size of your tent.
-- A power supply, cables, and a mushroom tent full of potential. Keep in mind that the foggers tend to run on AC and therefore you might need 24V AC for the fogger, 12V DC for the fan and 5V DC for the pi. 
+- A **pushbutton**, preferably with illumination because that looks better (the wiring diagram has the LED separate, but you can just change this to use the LED of the button).
+- A **potentiometer** to dial in the target.
+- A **power switch** (kinda optional but recommended); you will need to add that to your power supply.
+- A 12V (or similar) **waterproof PC fan**, for example, [this one](https://www.titan-cd.com/en/product/12V-DC-IP55-Waterproof-Dustproof-Case-Cooling-Fan-120mm/TFD-12025KW-Series.html).
+- A **fogger** matching the size of your tent. Any will do, but get a decent one, as it will run a lot. One option is a fogger from [House of Hydro](https://thehouseofhydro.com/) but there are many alternatives.
+- A large enough **tote** depending on the size of your tent.
+- A **power supply**, cables, and a mushroom tent full of potential. Keep in mind that the foggers tend to run on AC, and therefore you might need 24V AC for the fogger, 12V DC for the fan, and 5V DC for the Pi.
+     - Depending on your power supply situation, a step-down module from, e.g., 12V to 5V, as well as an AC-to-DC converter from, e.g., the AC voltage of the fogger, would allow you to only use one power supply. This would make it slicker, but only do this if you are comfortable working with electrics, and remember this thing is near water; you do not want any dodgy currents anywhere nearby!
+
+
+
+## Wiring diagram
+
+The wiring shows an approximation of my setup. You need to make a solution for the required 2 different DC supplies and the AC supply (or whatever your fogger uses). Also use a weatherproof version of the SHT31.
+
+![wiring](wiring.png)
+
+## Making the fogger
+
+To assemble the humidifier itself, watch a video, for example, [this one here](https://www.youtube.com/watch?v=vmiO6Z_HLCE). 
+
+### Attaching it to your plumbing (optional)
+
+If you want and are able to attach this to a tap, then this is a good idea; it makes your life easier. To do that, you need to get a float valve. I used a [spare part for the SonicAir 23L](https://hydroponics.co.uk/products/sonic-air-23l-float-kit) which you can buy separately. In theory you can also use a toilet float. Do not use the garden hose connectors, but use a washing machine hose. This will prevent leaks. 
+
+If you go for this version, I would suggest reducing the size of your tote to a more shallow version, as the water gets refilled automatically, and this reduces the risk of stuff growing in your tank (a tiny bit).
 
 ### Software Setup
 
