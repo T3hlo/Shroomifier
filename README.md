@@ -77,12 +77,10 @@ If you go for this version, I would suggest reducing the size of your tote to a 
    - `tm1637.py`
    - `config.json`
 
-4. Adjust the `config.json` file to your preferred humidity and temperature settings:
+4. Adjust the `config.json` file to your preferred humidity settings:
 
    ```json
-   jsonCopy code{  
-       "humidity_target": 85,  
-       "humidity_tolerance": 5  
+      {"targetHum": 35}
    }  
    ```
 
@@ -103,7 +101,7 @@ If you go for this version, I would suggest reducing the size of your tote to a 
 | GPIO 1                | Pushbutton    |             |
 | GPIO 2                | LED (button)  |             |
 
-*The SHT31 is supplied with power via a pin that can be used to power the sensor down if it should fail. This has not been observed at this point so this is not implemented in the current version. 
+*The SHT31 is supplied with power via a pin that can be used to power the sensor down if it should fail. I have not yet come across this issue with this sensor at this point so this is not implemented in the current version. 
 
 ## Usage
 
